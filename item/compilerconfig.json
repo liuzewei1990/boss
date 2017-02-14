@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "styles/Global.css",
+    "inputFile": "styles/Global.less"
+  },
+  {
+    "outputFile": "styles/index.css",
+    "inputFile": "styles/index.less"
+  }
+]

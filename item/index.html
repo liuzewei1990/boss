@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html data-mw="640">
+<head>
+          <meta charset="utf-8" />
+          <title> 一封来自Boss直聘的邀请函</title>
+          <script>document.write('<link href="styles/index.min.css?r=' + Date.now() + '" rel="stylesheet" />');</script>
+          <script src="scripts/pace.js"></script>
+          <script src="scripts/Joy.js"></script>
+          <script>
+                    F.set_accredit(true);
+          </script>
+</head>
+<body class="" id="container" style="">
+          <div id="layerContainer">
+                    <div class="layerSi layer" data-depth="0.8"></div>
+          </div>
+          <audio src="audio/mail.mp3" preload="auto" id="mail" style="display:; opacity:0;"></audio>
+          <audio src="audio/blued.mp3" preload="auto" id="blued" style="display:; opacity:0;"></audio>
+          <audio src="audio/unlock.mp3" preload="auto" id="unlock" style="display:; opacity:0;"></audio>
+          <audio src="audio/tock-loop.mp3" preload="auto" id="tockLoop" style="display:; opacity:0;"></audio>
+          <audio src="audio/tink.mp3" preload="auto" id="tink" style="display:; opacity:0;"></audio>
+          <section class="page page5"></section>
+          <section class="page page4" id="container">
+                    <!--<div class="background " data-depth="1"></div>-->
+                    <img class="mdd" src="images/mdd.png" alt="" />
+                    <form>
+                              <label for="u_name" class="">
+                                        <input type="text" value="" id="u_name" name="姓名" placeholder="请输入姓名" data-info="姓名不能为空" />
+                              </label>
+                              <label for="g_name">
+                                        <input type="text" value="" id="g_name" name="公司" placeholder="请输入公司名称" data-info="请输入公司名称" />
+                              </label>
+                              <label for="u_zhiwei">
+                                        <input type="text" value="" id="u_zhiwei" name="职位" placeholder="请输入职务名称" data-info="请填写职位信息" />
+                              </label>
+                              <label for="u_eamil">
+                                        <input type="text" value="" id="u_eamil" name="邮箱" placeholder="请输入邮箱" data-info="邮箱地址填写错误" />
+                              </label>
+                              <label for="u_phone">
+                                        <input type="text" value="" id="u_phone" name="手机号" placeholder="请输入手机号" data-info="手机号填写错误" />
+                              </label>
+                    </form>
+                    <a class="btn" id="btn">报名参加</a>
+          </section>
+          <section class="page page3" id="container">
+                    <!--<div class="background layer" data-depth="1"></div>-->
+                    <div class="mdds mddsAnimate"></div>
+                    <img class="p3_num p3_1" src="images/p3_1.png" alt="" />
+                    <img class="p3_num p3_2" src="images/p3_2.png" alt="" />
+                    <img class="p3_num p3_3" src="images/p3_3.png" alt="" />
+                    <img class="p3_num p3_4" src="images/p3_4.png" alt="" />
+                    <img class="p3_5" src="images/p3_5.png" alt="" />
+                    <a class="signBtn">立即报名</a>
+          </section>
+          <section class="page page2">
+                    <div class="inputContainer">
+                              <div class="input"></div>
+                              <div class="hidden">
+                                        <div class="key"></div>
+                                        <div class="send"></div>
+                              </div>
+                    </div>
+                    <section class="newsContainer">
+                              <ul class="p2_newsList"></ul>
+                    </section>
+                    <div class="shadow">
+                              <div class="rgba"></div>
+                              <img class="mask" src="images/mask.png" alt="" />
+                    </div>
+          </section>
+          <section class="page start-up"></section>
+          <section class="page page1">
+                    <!--<div class="topBar"></div>-->
+                    <div class="container">
+                              <img class="time" src="images/time.png" alt="" />
+                              <img class="line" src="images/line.png" alt="" />
+                              <div class="move"><img src="images/move.png" alt="Alternate Text" /></div>
+                              <section class="newsContainer">
+                                        <ul class="p1_newsList"></ul>
+                              </section>
+                    </div>
+          </section>
+          <script type="text/ng-template" id="boss">
+                    <li class="boss">
+                              <div class="header">
+
+                              </div>
+                              <div class="content">
+                                        <span>赵鹏@Boss直聘CEO</span>
+                                        <p>本人很期待各位大佬的干货。@<span class="wx_name">周云广</span>，你来不来?</p>
+                              </div>
+                              <div style="clear:both;"></div>
+                    </li>
+          </script>
+          <script type="text/template" id="self">
+                    <li class="self">
+                              <div class="header">
+
+                              </div>
+                              <div class="content">
+                                        <span>周云广</span>
+                                        <p style="background-color:#A2E65B;">哈哈，给我留个前排座位。</p>
+                              </div>
+                              <div style="clear:both;"></div>
+                    </li>
+          </script>
+          <script src="scripts/jquery.min.js"></script>
+          <script src="scripts/parallax.min.js"></script>
+          <script src="scripts/Promise-min.js"></script>
+          <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+          <script>document.write('<script src="scripts/index.js?r=' + Date.now() + '"><\/script>')</script>
+          <script>
+                    var scene = document.getElementById('layerContainer'),
+                    layerSi = scene.querySelectorAll(".layerSi")[0];
+                    parallax = new Parallax(scene);
+                    layerSi.style.left = (scene.clientWidth - layerSi.clientWidth) / 2 + "px";
+                    layerSi.style.top = (scene.clientHeight - layerSi.clientHeight) / 2 + "px";
+                    parallax.enable(); //开启
+                    //parallax.disable(); //禁用
+                    parallax.calibrate(false, true); //校正
+                    parallax.invert(false, false); //反向
+                    parallax.limit(100, 80); //限制范围
+                    parallax.scalar(5, 5); //移动速度
+                    parallax.friction(0.2, 0.8); //摩擦系数
+          </script>
+</body>
+</html>
